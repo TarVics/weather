@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Weather forecast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class='wrapper'>
+    <div id="search-form">
+        <form>
+            <input class='searchbar transparent' id='search' type='text' placeholder='enter city, country'/>
+            <input class='button transparent' id='button' type="submit" value='GO'/>
+        </form>
+    </div>
+
+    <div class='panel'>
+        <h2 class='city' id='city'></h2>
+        <div class='weather' id='weather'>
+            <div class='group secondary'>
+                <h3 id='dt'></h3>
+                <h3 id='description'></h3>
+            </div>
+            <div class='group secondary'>
+                <h3 id='wind'></h3>
+                <h3 id='humidity'></h3>
+            </div>
+            <div class='temperature' id='temperature'>
+                <h1 class='temp' id='temp'><!--
+                    --><i id='condition'></i>
+                    <span id='num'></span>
+                    <a class='fahrenheit' id='fahrenheit'>&deg;F</a><!--
+                    --><span class='divider secondary'>|</span><!--
+                    --><a class='celsius' id='celsius'>&deg;C</a>
+                </h1>
+            </div>
+            <div class='forecast' id='forecast'></div>
+        </div>
+    </div>
+</div>
+<script src="./main.js"></script>
+</body>
+</html>
